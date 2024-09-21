@@ -62,9 +62,10 @@ h1 {
 }
 
 .card img {
-    width: 100%;
+    width: 100%; /* Asegúrate de que la imagen ocupe el 100% del contenedor */
     height: auto;
     border-radius: 15px 15px 0 0;
+    margin-bottom: 10px; /* Espacio entre la imagen y el título */
     transition: transform 0.3s ease;
 }
 
@@ -73,7 +74,7 @@ h1 {
 }
 
 .card-body {
-    padding: 20px;
+    padding: 10px;
 }
 
 .card-title {
@@ -85,10 +86,18 @@ h1 {
 
 .card-price {
     font-size: 1.5em;
-    color: #28a745;
+    color: #58C5E0;
     font-weight: 700;
-    margin-bottom: 15px;
+    margin-bottom: 0px;
 }
+
+.card-price-old {
+    font-size: 0.9em; /* Tamaño de fuente más pequeño */
+    color: #777; /* Color más claro */
+    text-decoration: line-through; /* Tachar el precio anterior */
+    margin-top: 5px; /* Espacio encima */
+}
+
 
 .card-description {
     font-size: 1em;
@@ -100,7 +109,7 @@ h1 {
 .button {
     display: inline-block;
     padding: 12px 25px;
-    background-color: #007bff;
+    background-color: #7F20E6;
     color: white;
     text-decoration: none;
     border-radius: 5px;
@@ -120,16 +129,40 @@ h1 {
         width: 100%;
     }
 }
+/* Estilos generales para la descripción del producto */
+.product-details {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    max-width: 500px;
+    margin: 40px auto; /* Centra el contenedor en la página */
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.product-details img {
+    width: 100%; /* Asegúrate de que la imagen ocupe el 100% del contenedor */
+    height: auto;
+    margin-bottom: 10px; /* Espacio entre la imagen y el título */
+}
+
 
 /* Footer Styles */
 footer {
-    text-align: center;
+    text-align: center; /* Centra el texto horizontalmente */
     margin-top: 50px;
     padding: 20px;
     background-color: #333;
     color: white;
     font-size: 0.9em;
+    position: relative; /* Asegúrate de que esté dentro del flujo normal del documento */
+    bottom: 0; /* Alinea el footer al fondo si es necesario */
+    width: 100%; /* Asegúrate de que ocupe el ancho completo */
 }
+
 
 footer a {
     color: #007bff;
