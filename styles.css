@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* General Body Styles */
+body {
+    background-color: #f0f0f0;
+    color: #333;
+    padding: 20px;
+    line-height: 1.6;
+}
+
+/* Header (title centered) */
+header {
+    background-color: #007bff;
+    padding: 30px 20px;
+    text-align: center;
+    color: white;
+    font-size: 2.5em;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2.5em;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+/* Card Container */
+.container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 20px;
+}
+
+/* Card Styles */
+.card {
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    margin-bottom: 20px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px 15px 0 0;
+    transition: transform 0.3s ease;
+}
+
+.card:hover img {
+    transform: scale(1.05);
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.card-title {
+    font-size: 1.8em;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.card-price {
+    font-size: 1.5em;
+    color: #28a745;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.card-description {
+    font-size: 1em;
+    color: #777;
+    margin-bottom: 20px;
+    line-height: 1.4;
+}
+
+.button {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1em;
+    font-weight: 600;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.button:hover {
+    background-color: #0056b3;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .card {
+        width: 100%;
+    }
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    margin-top: 50px;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    font-size: 0.9em;
+}
+
+footer a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
